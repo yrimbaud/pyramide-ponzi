@@ -24,6 +24,6 @@ function detectPonzi() {
     ) {
         document.getElementById("result").innerHTML = "Il est possible que l'offre soit une pyramide de Ponzi.";
     } else {
-        document.getElementById("result").innerHTML = "En se basant sur vos réponses, il semblerait que l'offre ne soit pas une pyramide de Ponzi.";
+        document.getElementById("result").innerHTML = "En se basant sur vos r&eacute;ponses, il semblerait que l'offre ne soit pas une pyramide de Ponzi.";
     }
 }
