@@ -5,3 +5,7 @@ body {
 .question {
     margin-bottom: 20px;
 }
+
+#result {
+    color: red;
+}
