@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questionnaire pour détecter une Pyramide de Ponzi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pyramide de Ponzi</h1>
+    <form id="ponziForm">
+        <div class="question">
+            <label for="investmentReturns">Est-ce que l'offre garantit des rendements d'investissement élevés ?</label><br>
+            <input type="checkbox" id="investmentReturns" name="investmentReturns">
+        </div>
+        <div class="question">
+            <label for="recruitment">Est-ce que l'offre dépend du recrutement de nouveaux investisseurs pour payer les rendements ?</label><br>
+            <input type="checkbox" id="recruitment" name="recruitment">
+        </div>
+        <div class="question">
+            <label for="returnsConsistency">Les rendements de l'investissement sont-ils trop constants malgré les fluctuations du marché ?</label><br>
+            <input type="checkbox" id="returnsConsistency" name="returnsConsistency">
+        </div>
+        <div class="question">
+            <label for="realProduct">Est-ce que l'entreprise a un produit ou un service réel qu'elle vend, ou est-ce que tout l'argent vient des investisseurs ?</label><br>
+            <input type="checkbox" id="realProduct" name="realProduct">
+        </div>
+        <div class="question">
+            <label for="registered">Est-ce que l'entreprise ou l'individu qui offre l'investissement est enregistré auprès des autorités financières de votre pays ?</label><br>
+            <input type="checkbox" id="registered" name="registered">
+        </div>
+        <div class="question">
+            <label for="transparent">Est-ce que l'entreprise est transparente sur la façon dont elle génère ses rendements ?</label><br>
+            <input type="checkbox" id="transparent" name="transparent">
+        </div>
+        <div class="question">
+            <label for="withdrawalPenalty">Y a-t-il des frais ou des pénalités élevés pour retirer votre investissement tôt ?</label><br>
+            <input type="checkbox" id="withdrawalPenalty" name="withdrawalPenalty">
+        </div>
+        <div class="question">
+            <label for="aggressiveSales">L'entreprise utilise-t-elle des tactiques de vente agressives ou fait-elle pression pour que vous investissiez ?</label><br>
+            <input type="checkbox" id="aggressiveSales" name="aggressiveSales">
+        </div>
+        <div class="question">
+            <label for="reinvestment">Est-ce que l'entreprise vous encourage à réinvestir vos rendements au lieu de les retirer ?</label><br>
+            <input type="checkbox" id="reinvestment" name="reinvestment">
+        </div>
+        <div class="question">
+            <label for="hardToUnderstand">Avez-vous du mal à comprendre comment fonctionne l'investissement ou l'entreprise ?</label><br>
+            <input type="checkbox" id="hardToUnderstand" name="hardToUnderstand">
+        </div>
+        <button type="button" onclick="detectPonzi()">Vérifier</button>
+    </form>
+    <p id="result"></p>
+    
+    <script src="questions.js"></script>
+</body>
+</html>
